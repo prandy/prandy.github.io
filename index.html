@@ -1,0 +1,162 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/jquery-plugins.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/action.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+
+    <title>Prandy - Friendly Prandy!</title>
+
+    <script>
+        $(document).ajaxError(function (e, xhr, settings, exception) {
+            alert('Error: ' + exception + ' e:' + e + ' xhr' + xhr);
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+<div id="wrap"><!-- wrap -->
+    <div id="mobile_navi"><!-- mobile_navi -->
+        <div class="navi">
+            <a class="home js-link-home/index">HOME</a>
+            <!--
+            <p class="le">
+                <a href="#" class="locale kr on">한국어</a>
+                <a href="#" class="locale en">English</a>
+            </p>
+            -->
+            <h1><img src="images/mo_logo.png" width="65" height="25" alt="Prandy"/></h1>
+        </div>
+
+        <div class="menu">
+            <a class="m_01" id="tab_menu1">WE ARE PRANDY</a>
+            <a class="m_02" id="tab_menu2">OUR BUSINESS</a>
+            <a class="m_03" id="tab_menu3">CONTACT</a>
+        </div>
+
+        <p class="s_menu_01">
+            <a class="js-link-weareprandy/introduction">Introduction</a>
+            <a class="js-link-weareprandy/organization">Organization</a>
+            <a class="js-link-weareprandy/ci">CI</a>
+            <a class="js-link-weareprandy/news">NEWS</a>
+        </p>
+
+        <p class="s_menu_02">
+            <a class="js-link-ourbusiness/business_solution">Solution</a>
+            <a class="js-link-ourbusiness/business_service">Service</a>
+            <a class="js-link-ourbusiness/business_si">SI</a>
+        </p>
+
+        <p class="s_menu_03">
+            <a class="js-link-contact/index">Contact Us</a>
+        </p>
+    </div>
+    <!-- // mobile_navi -->
+
+    <div id="left_wrap"><!-- left_wrap -->
+        <h1><a class="js-link-home/index">Prandy</a></h1>
+
+        <div id="secondpane"><!-- secondpane -->
+            <a class="menu_head">WE ARE PRANDY</a>
+
+            <div class="menu_body">
+                <a class="js-link-weareprandy/introduction">Introduction</a>
+                <a class="js-link-weareprandy/organization">Organization</a>
+                <a class="js-link-weareprandy/ci">CI</a>
+                <a class="js-link-weareprandy/news">NEWS</a>
+            </div>
+
+            <a class="menu_head">OUR BUSINESS</a>
+
+            <div class="menu_body">
+                <a class="js-link-ourbusiness/business_solution">Solution</a>
+                <a class="js-link-ourbusiness/business_service">Service</a>
+                <a class="js-link-ourbusiness/business_si">SI</a>
+            </div>
+
+            <a class="menu_head">CONTACT</a>
+
+            <div class="menu_body">
+                <a class="js-link-contact/index">Contact Us</a>
+                <!-- <a href="#" onClick="$_('/client/contact/joinpartner/index').go();"><spring:message code="common.menu.contact.join_partner"/></a> -->
+            </div>
+        </div>
+        <!-- // secondpane -->
+
+        <div class="left_banner">
+            <!--
+            <a href="#">베너</a>
+            -->
+        </div>
+    </div>
+    <!-- // left_wrap -->
+
+    <div id="body_wrap"><!-- body_wrap -->
+        <div id="right_wrap"><!-- right_wrap -->
+            <div class="fixed">
+                <!--
+                <a href="#" class="locale kr on">한국어</a>
+                <a href="#" class="locale en">English</a>
+                -->
+                <a href="#" class="link g">홈</a>
+                <a href="http://facebook.com/prandybiz" class="link p" target="_blank">페이스북</a>
+                <a href="https://twitter.com/prandybiz" class="link t end" target="_blank">트위터</a>
+                <a class="page_top">Top</a>
+            </div>
+        </div>
+        <!-- // right_wrap -->
+        <div id="body-content">
+        </div>
+    </div>
+    <!-- // body_wrap -->
+
+    <div id="copy_wrap"><!-- copy_wrap -->
+        <img src="images/copy_logo.png" class="logo" alt="PRANDY"/>
+
+        <p>
+            <span>회사명</span>: 프랜디
+        </p>
+
+        <p>
+            <span>대표자</span>: 유명한
+        </p>
+
+        <p>
+            <span>주소</span>: 경기도 성남시 분당구 정자일로 162 젤존타워2 505호 [463-867]
+        </p>
+
+        <p>
+            <span>전화</span>: 82-31-721-1775
+        </p>
+
+        <p class="end">
+            <span>팩스</span>: 82-31-721-1776
+        </p>
+
+        <p class="copyright end">
+            COPYRIGHT &copy; 2010~2014 PRANDY INC. ALL RIGHTS RESERVED
+        </p>
+    </div>
+    <!-- // copy_wrap -->
+</div>
+<!-- // wrap -->
+
+<script src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+<script src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

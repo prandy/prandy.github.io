@@ -1,0 +1,57 @@
+<div class="flexslider"><!-- flexslider -->
+    <ul class="slides">
+        <li><img src="images/main_img_01.png" /></li>
+        <li><img src="images/main_img_03.png" /></li>
+        <li><img src="images/main_img_04.png" /></li>
+        <li><img src="images/main_img_02.png" /></li>
+    </ul>
+</div><!-- // flexslider -->
+
+<div class="main_news">
+    <p class="tit">
+        <span class="s">PRANDY</span><br/>
+        <span class="b">NEWS</span>
+    </p>
+
+    <p class="list">
+    </p>
+</div>
+
+<div class="main_work_list">
+    <ul>
+        <li>
+            <a class="work_img" style="background:url(images/pj_prandy.gif) top center no-repeat;" tg="ourbusiness/business_service"></a>
+            <p class="work_info">
+                <a >Prandy</a>
+                마음까지 알아주는 프랜디에서 친구(프랜드)를 만드세요!
+            </p>
+        </li>
+
+        <li>
+            <a class="work_img" style="background:url(images/pj_dtector.gif) top center no-repeat;" tg="ourbusiness/business_solution"></a>
+            <p class="work_info">
+                <a >D-Tector</a>
+                기업기밀 문서보호 솔루션 입니다.
+            </p>
+        </li>
+
+        <li>
+            <a class="work_img" style="background:url(images/pj_wonshot.gif) top center no-repeat;" tg="ourbusiness/business_service"></a>
+            <p class="work_info">
+                <a >Wonshot</a>
+                소셜 커머스의 진화형 쇼핑몰 솔루션 입니다.
+            </p>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $( '.flexslider' ).flexslider( { animation: "slide" } );
+
+    $( 'a.work_img' ).click( function ( e ) {
+        e.preventDefault();
+        $_( 'views/' + $( this ).attr( 'tg' ) ).update( '#body-content' );
+    } );
+
+    PrandyApp.twitterTimeline( { count: 3, mainYn: true } );
+</script>
